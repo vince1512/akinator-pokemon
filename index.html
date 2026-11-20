@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="PokéNator — Pensez à n'importe lequel des 1025 Pokémon (Générations 1 à 9) et laissez le Pokédex bayésien le deviner !"
+  />
+  <title>PokéNator — Le Pokédex qui lit dans vos pensées</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="bg-backdrop" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <div class="pokedex-shell">
+    <!-- En-tête style Pokédex -->
+    <header class="pokedex-header">
+      <div class="header-left">
+        <div class="dex-lens" aria-hidden="true">
+          <span class="dex-lens-glare"></span>
+        </div>
+        <div class="dex-leds" aria-hidden="true">
+          <span class="led led-red"></span>
+          <span class="led led-yellow"></span>
+          <span class="led led-green"></span>
+        </div>
+        <div class="brand-group">
+          <span class="brand-name">PokéNator</span>
+          <span class="brand-sub">DEX-AI v2</span>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <span id="db-badge" class="db-badge" title="Base de données Pokémon chargée">
+          <span class="db-dot"></span>
+          <span id="db-count-header">Chargement…</span>
+        </span>
+        <button
+          id="btn-theme"
+          class="icon-btn"
+          type="button"
+          aria-label="Changer le thème sombre ou clair"
+          title="Basculer thème sombre / clair"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Écran principal du Pokédex -->
+    <main class="pokedex-screen">
+      <!-- Bannière d'erreur de chargement -->
+      <div id="load-error" class="alert-box hidden" role="alert">
+        <strong>Impossible de charger <code>data/pokemons.json</code>.</strong>
+        <p>
+          Si vous avez ouvert <code>index.html</code> directement en fichier local (<code>file://</code>),
+          lancez un petit serveur statique depuis le dossier du projet :
+          <code>python -m http.server 8000</code> puis ouvrez <code>http://localhost:8000</code>.
+        </p>
+      </div>
+
+      <!-- 1. ÉCRAN D'ACCUEIL -->
+      <section id="screen-home" class="screen active" aria-labelledby="home-title">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="scanner-orb">
+            <div class="scanner-ring ring-1"></div>
+            <div class="scanner-ring ring-2"></div>
+            <svg class="pokeball-svg" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="4" opacity="0.25" />
+              <path d="M8 50 A42 42 0 0 1 92 50 Z" fill="var(--accent-crimson)" opacity="0.92" />
+              <path d="M8 50 A42 42 0 0 0 92 50 Z" fill="var(--surface-elevated)" />
+              <line x1="6" y1="50" x2="94" y2="50" stroke="var(--bg-chassis)" stroke-width="6" />
+              <circle cx="50" cy="50" r="14" fill="var(--bg-chassis)" />
+              <circle cx="50" cy="50" r="8" fill="var(--accent-cyan)" class="orb-core" />
+            </svg>
+          </div>
+        </div>
+
+        <h1 id="home-title" class="hero-title">
+          Pensez à un <span class="gradient-text">Pokémon</span>,<br />je vais le deviner !
+        </h1>
+
+        <p class="hero-desc">
+          Choisissez secrètement un Pokémon dans votre tête, répondez à mes questions avec
+          sincérité (même si vous hésitez !) et laissez mon moteur bayésien remonter la piste.
+        </p>
+
+        <div class="home-stats">
+          <div class="stat-pill">
+            <span class="stat-label">Base chargée</span>
+            <span id="home-db-count" class="stat-value">—</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-label">Générations</span>
+            <span id="home-gen-range" class="stat-value">1 à 9</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-label">Moteur</span>
+            <span class="stat-value">Bayésien</span>
+          </div>
+        </div>
+
+        <div class="home-actions">
+          <button id="btn-start" class="btn btn-primary btn-lg" type="button" disabled>
+            <span>Commencer l'enquête</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Aperçu pratique affiché uniquement quand la base est en mode échantillon (<= 30 Pokémon) -->
+        <details id="sample-drawer" class="sample-drawer hidden">
+          <summary>Mode échantillon : voir les Pokémon actuellement chargés</summary>
+          <p class="sample-note">
+            Lancez <code>python scripts/fetch_pokemons.py</code> pour générer la base complète des 1025 Pokémon.
+          </p>
+          <div id="sample-list" class="sample-chips"></div>
+        </details>
+      </section>
+
+      <!-- 2. PHASE DE QUESTIONS -->
+      <section id="screen-question" class="screen" aria-live="polite">
+        <div class="telemetry-bar">
+          <div class="telemetry-meta">
+            <span id="question-number" class="q-badge">Question #1</span>
+            <span id="candidates-pill" class="candidates-pill">~20 pistes</span>
+          </div>
+          <div class="certainty-wrapper">
+            <div class="certainty-header">
+              <span>Certitude</span>
+              <span id="certainty-value" class="certainty-pct">0 %</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="certainty-progressbar">
+              <div id="certainty-fill" class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-stage">
+          <div id="ai-avatar" class="ai-avatar state-searching" aria-hidden="true">
+            <div class="avatar-pulse"></div>
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" fill="var(--surface-card)" stroke="var(--accent-cyan)" stroke-width="2.5" />
+              <path d="M6 32 A26 26 0 0 1 58 32 Z" fill="var(--accent-crimson)" opacity="0.88" />
+              <line x1="4" y1="32" x2="60" y2="32" stroke="var(--bg-chassis)" stroke-width="4" />
+              <circle cx="32" cy="32" r="9" fill="var(--bg-chassis)" />
+              <circle cx="32" cy="32" r="5" fill="var(--accent-cyan)" class="avatar-eye" />
+            </svg>
+          </div>
+
+          <div id="question-bubble" class="speech-bubble">
+            <span id="question-category" class="category-chip">Type</span>
+            <p id="question-text" class="question-text">Chargement de la question…</p>
+          </div>
+        </div>
+
+        <div class="answers-grid" role="group" aria-label="Choix de réponse">
+          <button class="answer-btn ans-yes" data-answer="yes" type="button">
+            <span class="ans-key">1</span>
+            <span class="ans-label">Oui</span>
+            <span class="ans-icon" aria-hidden="true">✓</span>
+          </button>
+          <button class="answer-btn ans-prob-yes" data-answer="probably_yes" type="button">
+            <span class="ans-key">2</span>
+            <span class="ans-label">Probablement oui</span>
+            <span class="ans-icon" aria-hidden="true">≈</span>
+          </button>
+          <button class="answer-btn ans-unknown" data-answer="dont_know" type="button">
+            <span class="ans-key">3</span>
+            <span class="ans-label">Je ne sais pas</span>
+            <span class="ans-icon" aria-hidden="true">?</span>
+          </button>
+          <button class="answer-btn ans-prob-no" data-answer="probably_no" type="button">
+            <span class="ans-key">4</span>
+            <span class="ans-label">Probablement non</span>
+            <span class="ans-icon" aria-hidden="true">≉</span>
+          </button>
+          <button class="answer-btn ans-no" data-answer="no" type="button">
+            <span class="ans-key">5</span>
+            <span class="ans-label">Non</span>
+            <span class="ans-icon" aria-hidden="true">✕</span>
+          </button>
+        </div>
+
+        <div class="question-footer">
+          <button id="btn-undo" class="btn btn-ghost" type="button" disabled>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 14L4 9l5-5" />
+              <path d="M20 20v-7a4 4 0 0 0-4-4H4" />
+            </svg>
+            <span>Question précédente</span>
+          </button>
+          <span class="shortcut-hint">Raccourcis : 1–5 · Retour arrière</span>
+          <button id="btn-restart-q" class="btn btn-ghost btn-subtle" type="button">
+            Recommencer
+          </button>
+        </div>
+      </section>
+
+      <!-- 3. PHASE DE PROPOSITION -->
+      <section id="screen-guess" class="screen" aria-live="polite">
+        <div class="reveal-header">
+          <span class="reveal-kicker">Analyse terminée</span>
+          <h2 class="reveal-title">Je pense que c'est…</h2>
+        </div>
+
+        <article class="pokemon-card">
+          <div class="card-glow" aria-hidden="true"></div>
+          <div class="card-top-row">
+            <span id="guess-id" class="dex-number">#0025</span>
+            <span id="guess-gen" class="gen-tag">Gén. 1</span>
+          </div>
+          <div class="artwork-stage">
+            <img id="guess-sprite" class="pokemon-artwork" src="" alt="" />
+          </div>
+          <h3 id="guess-name" class="pokemon-name">Pikachu</h3>
+          <div id="guess-types" class="types-row"></div>
+          <p id="guess-meta" class="guess-meta">Certitude : 92 % · Question #5</p>
+        </article>
+
+        <div class="guess-actions">
+          <button id="btn-guess-yes" class="btn btn-success btn-lg" type="button">
+            Oui, c'est lui !
+          </button>
+          <button id="btn-guess-no" class="btn btn-secondary btn-lg" type="button">
+            Non, continuer
+          </button>
+        </div>
+
+        <div class="guess-subactions">
+          <button id="btn-guess-undo" class="btn btn-ghost btn-subtle" type="button">
+            ← Corriger ma dernière réponse
+          </button>
+        </div>
+      </section>
+
+      <!-- 4. ÉCRAN DE VICTOIRE -->
+      <section id="screen-victory" class="screen" aria-live="polite">
+        <div class="victory-banner">
+          <span class="victory-pill">Pokémon identifié !</span>
+          <h2 id="victory-headline" class="reveal-title">Trouvé en 5 questions !</h2>
+        </div>
+
+        <article class="pokemon-card pokemon-card-victory">
+          <div class="card-glow card-glow-victory" aria-hidden="true"></div>
+          <div class="card-top-row">
+            <span id="victory-id" class="dex-number">#0025</span>
+            <span id="victory-gen" class="gen-tag">Gén. 1</span>
+          </div>
+          <div class="artwork-stage">
+            <img id="victory-sprite" class="pokemon-artwork" src="" alt="" />
+          </div>
+          <h3 id="victory-name" class="pokemon-name">Pikachu</h3>
+          <div id="victory-types" class="types-row"></div>
+        </article>
+
+        <div class="end-actions">
+          <button id="btn-replay-victory" class="btn btn-primary btn-lg" type="button">
+            Rejouer une partie
+          </button>
+        </div>
+      </section>
+
+      <!-- 5. FIN DE PARTIE / TOP 5 -->
+      <section id="screen-fail" class="screen" aria-live="polite">
+        <div class="reveal-header">
+          <span class="fail-kicker">Bien joué, dresseur !</span>
+          <h2 class="reveal-title">Vous m'avez posé une colle !</h2>
+          <p id="fail-subtitle" class="fail-subtitle">
+            Voici les 5 Pokémon les plus probables restants selon vos réponses :
+          </p>
+        </div>
+
+        <div id="top5-grid" class="top5-grid"></div>
+
+        <div class="end-actions">
+          <button id="btn-replay-fail" class="btn btn-primary btn-lg" type="button">
+            Rejouer
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pokedex-footer">
+      <span>100 % statique · Compatible GitHub Pages</span>
+      <span>Données &amp; Artworks : PokeAPI</span>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
