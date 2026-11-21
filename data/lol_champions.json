@@ -1,0 +1,4699 @@
+[
+  {
+    "id": "Aatrox",
+    "name": "Aatrox",
+    "title": "Épée des Darkin",
+    "roles": [
+      "Combattant"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Darkin",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2013,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Aatrox.png"
+  },
+  {
+    "id": "Ahri",
+    "name": "Ahri",
+    "title": "Renarde à neuf queues",
+    "roles": [
+      "Mage",
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Ionia",
+    "gender": "Femme",
+    "species": "Vastaya",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ahri.png"
+  },
+  {
+    "id": "Akali",
+    "name": "Akali",
+    "title": "Assassine rebelle",
+    "roles": [
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Top"
+    ],
+    "region": "Ionia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Énergie",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Akali.png"
+  },
+  {
+    "id": "Akshan",
+    "name": "Akshan",
+    "title": "Sentinelle rebelle",
+    "roles": [
+      "Tireur",
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Top"
+    ],
+    "region": "Shurima",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2021,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akshan_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Akshan.png"
+  },
+  {
+    "id": "Alistar",
+    "name": "Alistar",
+    "title": "Minotaure",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Alistar.png"
+  },
+  {
+    "id": "Ambessa",
+    "name": "Ambessa",
+    "title": "Matriarche de guerre",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Énergie",
+    "damage_type": "Physique",
+    "release_year": 2024,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ambessa_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ambessa.png"
+  },
+  {
+    "id": "Amumu",
+    "name": "Amumu",
+    "title": "Momie mélancolique",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Jungle",
+      "Support"
+    ],
+    "region": "Shurima",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Amumu.png"
+  },
+  {
+    "id": "Anivia",
+    "name": "Anivia",
+    "title": "Cryophénix",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Freljord",
+    "gender": "Femme",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Anivia.png"
+  },
+  {
+    "id": "Annie",
+    "name": "Annie",
+    "title": "Enfant des ténèbres",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid",
+      "Support"
+    ],
+    "region": "Runeterra",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Annie.png"
+  },
+  {
+    "id": "Aphelios",
+    "name": "Aphelios",
+    "title": "Arme des Lunaris",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Targon",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2019,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Aphelios.png"
+  },
+  {
+    "id": "Ashe",
+    "name": "Ashe",
+    "title": "Archère de givre",
+    "roles": [
+      "Tireur",
+      "Support"
+    ],
+    "lanes": [
+      "ADC",
+      "Support"
+    ],
+    "region": "Freljord",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ashe.png"
+  },
+  {
+    "id": "AurelionSol",
+    "name": "Aurelion Sol",
+    "title": "Forgeur d'étoiles",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Targon",
+    "gender": "Homme",
+    "species": "Dragon",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2016,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/AurelionSol.png"
+  },
+  {
+    "id": "Aurora",
+    "name": "Aurora",
+    "title": "Sorcière d'entre les mondes",
+    "roles": [
+      "Mage",
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Top"
+    ],
+    "region": "Freljord",
+    "gender": "Femme",
+    "species": "Vastaya",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2024,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aurora_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Aurora.png"
+  },
+  {
+    "id": "Azir",
+    "name": "Azir",
+    "title": "Empereur des sables",
+    "roles": [
+      "Mage",
+      "Tireur"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Shurima",
+    "gender": "Homme",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2014,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Azir.png"
+  },
+  {
+    "id": "Bard",
+    "name": "Bard",
+    "title": "Gardien errant",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Runeterra",
+    "gender": "Autre",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2015,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Bard.png"
+  },
+  {
+    "id": "Belveth",
+    "name": "Bel'Veth",
+    "title": "Impératrice du Néant",
+    "roles": [
+      "Combattant"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Néant",
+    "gender": "Femme",
+    "species": "Néant",
+    "range_type": "Mêlée",
+    "resource": "Sans ressource",
+    "damage_type": "Physique",
+    "release_year": 2022,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Belveth.png"
+  },
+  {
+    "id": "Blitzcrank",
+    "name": "Blitzcrank",
+    "title": "Golem de vapeur",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Zaun",
+    "gender": "Autre",
+    "species": "Robot / Golem",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Blitzcrank.png"
+  },
+  {
+    "id": "Brand",
+    "name": "Brand",
+    "title": "Vengeur flamboyant",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Support",
+      "Mid",
+      "Jungle"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Brand.png"
+  },
+  {
+    "id": "Braum",
+    "name": "Braum",
+    "title": "Cœur de Freljord",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2014,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Braum.png"
+  },
+  {
+    "id": "Briar",
+    "name": "Briar",
+    "title": "Faim insatiable",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2023,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Briar.png"
+  },
+  {
+    "id": "Caitlyn",
+    "name": "Caitlyn",
+    "title": "Shérif de Piltover",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Piltover",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Caitlyn.png"
+  },
+  {
+    "id": "Camille",
+    "name": "Camille",
+    "title": "Ombre d'acier",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Piltover",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2016,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Camille.png"
+  },
+  {
+    "id": "Cassiopeia",
+    "name": "Cassiopeia",
+    "title": "Étreinte du serpent",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid",
+      "Top"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Monstre / Esprit",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Cassiopeia.png"
+  },
+  {
+    "id": "Chogath",
+    "name": "Cho'Gath",
+    "title": "Terreur noire",
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Néant",
+    "gender": "Autre",
+    "species": "Néant",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Chogath.png"
+  },
+  {
+    "id": "Corki",
+    "name": "Corki",
+    "title": "Artilleur téméraire",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "ADC",
+      "Mid"
+    ],
+    "region": "Bandle",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Corki.png"
+  },
+  {
+    "id": "Darius",
+    "name": "Darius",
+    "title": "Main de Noxus",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Noxus",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Darius.png"
+  },
+  {
+    "id": "Diana",
+    "name": "Diana",
+    "title": "Mépris de la lune",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle",
+      "Mid"
+    ],
+    "region": "Targon",
+    "gender": "Femme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Diana.png"
+  },
+  {
+    "id": "DrMundo",
+    "name": "Dr. Mundo",
+    "title": "Dément de Zaun",
+    "roles": [
+      "Tank",
+      "Combattant"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/DrMundo.png"
+  },
+  {
+    "id": "Draven",
+    "name": "Draven",
+    "title": "Glorieux exécuteur",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Noxus",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Draven.png"
+  },
+  {
+    "id": "Ekko",
+    "name": "Ekko",
+    "title": "Fractureur du temps",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "lanes": [
+      "Mid",
+      "Jungle"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2015,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ekko.png"
+  },
+  {
+    "id": "Elise",
+    "name": "Elise",
+    "title": "Reine araignée",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Femme",
+    "species": "Monstre / Esprit",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Elise.png"
+  },
+  {
+    "id": "Evelynn",
+    "name": "Evelynn",
+    "title": "Démon sadique",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Runeterra",
+    "gender": "Femme",
+    "species": "Démon",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": true,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Evelynn.png"
+  },
+  {
+    "id": "Ezreal",
+    "name": "Ezreal",
+    "title": "Explorateur prodigue",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Piltover",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ezreal.png"
+  },
+  {
+    "id": "Fiddlesticks",
+    "name": "Fiddlesticks",
+    "title": "Effroi nocturne",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Runeterra",
+    "gender": "Autre",
+    "species": "Démon",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Fiddlesticks.png"
+  },
+  {
+    "id": "Fiora",
+    "name": "Fiora",
+    "title": "Sublime bretteuse",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Fiora.png"
+  },
+  {
+    "id": "Fizz",
+    "name": "Fizz",
+    "title": "Filou des mers",
+    "roles": [
+      "Assassin",
+      "Combattant"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Bilgewater",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Fizz.png"
+  },
+  {
+    "id": "Galio",
+    "name": "Galio",
+    "title": "Colosse",
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "lanes": [
+      "Mid",
+      "Support"
+    ],
+    "region": "Demacia",
+    "gender": "Homme",
+    "species": "Robot / Golem",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Galio.png"
+  },
+  {
+    "id": "Gangplank",
+    "name": "Gangplank",
+    "title": "Fléau des mers",
+    "roles": [
+      "Combattant"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Bilgewater",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Gangplank.png"
+  },
+  {
+    "id": "Garen",
+    "name": "Garen",
+    "title": "Force de Demacia",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Demacia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Garen.png"
+  },
+  {
+    "id": "Gnar",
+    "name": "Gnar",
+    "title": "Chaînon manquant",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2014,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Gnar.png"
+  },
+  {
+    "id": "Gragas",
+    "name": "Gragas",
+    "title": "Agitateur",
+    "roles": [
+      "Combattant",
+      "Mage"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle",
+      "Mid"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Gragas.png"
+  },
+  {
+    "id": "Graves",
+    "name": "Graves",
+    "title": "Hors-la-loi",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Bilgewater",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Graves.png"
+  },
+  {
+    "id": "Gwen",
+    "name": "Gwen",
+    "title": "Couturière sacrée",
+    "roles": [
+      "Combattant"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2021,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Gwen.png"
+  },
+  {
+    "id": "Hecarim",
+    "name": "Hecarim",
+    "title": "Ombre de la guerre",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Hecarim.png"
+  },
+  {
+    "id": "Heimerdinger",
+    "name": "Heimerdinger",
+    "title": "Inventeur réputé",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Top",
+      "Mid",
+      "Support"
+    ],
+    "region": "Piltover",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Heimerdinger.png"
+  },
+  {
+    "id": "Hwei",
+    "name": "Hwei",
+    "title": "Visionnaire",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid",
+      "Support"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2023,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hwei_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Hwei.png"
+  },
+  {
+    "id": "Illaoi",
+    "name": "Illaoi",
+    "title": "Prêtresse du kraken",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Bilgewater",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2015,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Illaoi.png"
+  },
+  {
+    "id": "Irelia",
+    "name": "Irelia",
+    "title": "Danseuse des lames",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Top",
+      "Mid"
+    ],
+    "region": "Ionia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Irelia.png"
+  },
+  {
+    "id": "Ivern",
+    "name": "Ivern",
+    "title": "Aîné de la forêt",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2016,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ivern.png"
+  },
+  {
+    "id": "Janna",
+    "name": "Janna",
+    "title": "Avatar de l'air",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Zaun",
+    "gender": "Femme",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Janna.png"
+  },
+  {
+    "id": "JarvanIV",
+    "name": "Jarvan IV",
+    "title": "Exemple demacien",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Demacia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/JarvanIV.png"
+  },
+  {
+    "id": "Jax",
+    "name": "Jax",
+    "title": "Maître d'armes",
+    "roles": [
+      "Combattant"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Hybride",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Jax.png"
+  },
+  {
+    "id": "Jayce",
+    "name": "Jayce",
+    "title": "Protecteur du futur",
+    "roles": [
+      "Combattant",
+      "Tireur"
+    ],
+    "lanes": [
+      "Top",
+      "Mid"
+    ],
+    "region": "Piltover",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Jayce.png"
+  },
+  {
+    "id": "Jhin",
+    "name": "Jhin",
+    "title": "Virtuose",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2016,
+    "has_dash": false,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Jhin.png"
+  },
+  {
+    "id": "Jinx",
+    "name": "Jinx",
+    "title": "Gâchette folle",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Zaun",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2013,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Jinx.png"
+  },
+  {
+    "id": "KSante",
+    "name": "K'Santé",
+    "title": "Fierté de Nazumah",
+    "roles": [
+      "Tank",
+      "Combattant"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Shurima",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2022,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/KSante.png"
+  },
+  {
+    "id": "Kaisa",
+    "name": "Kai'Sa",
+    "title": "Fille du Néant",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Néant",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Hybride",
+    "release_year": 2018,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Kaisa.png"
+  },
+  {
+    "id": "Kalista",
+    "name": "Kalista",
+    "title": "Lance de la vengeance",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Femme",
+    "species": "Mort-vivant",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2014,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Kalista.png"
+  },
+  {
+    "id": "Karma",
+    "name": "Karma",
+    "title": "Sagesse incarnée",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Support",
+      "Mid"
+    ],
+    "region": "Ionia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Karma.png"
+  },
+  {
+    "id": "Karthus",
+    "name": "Karthus",
+    "title": "Liche",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Jungle",
+      "ADC"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Karthus.png"
+  },
+  {
+    "id": "Kassadin",
+    "name": "Kassadin",
+    "title": "Chasseur du Néant",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Néant",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Kassadin.png"
+  },
+  {
+    "id": "Katarina",
+    "name": "Katarina",
+    "title": "Lame sinistre",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Hybride",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Katarina.png"
+  },
+  {
+    "id": "Kayle",
+    "name": "Kayle",
+    "title": "Vertueuse",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Hybride",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Kayle.png"
+  },
+  {
+    "id": "Kayn",
+    "name": "Kayn",
+    "title": "Faucheur de l'ombre",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Darkin",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2017,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Kayn.png"
+  },
+  {
+    "id": "Kennen",
+    "name": "Kennen",
+    "title": "Cœur de la tempête",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Énergie",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Kennen.png"
+  },
+  {
+    "id": "Khazix",
+    "name": "Kha'Zix",
+    "title": "Faucheur du Néant",
+    "roles": [
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Néant",
+    "gender": "Homme",
+    "species": "Néant",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Khazix.png"
+  },
+  {
+    "id": "Kindred",
+    "name": "Kindred",
+    "title": "Chasseurs éternels",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Runeterra",
+    "gender": "Autre",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2015,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Kindred.png"
+  },
+  {
+    "id": "Kled",
+    "name": "Kled",
+    "title": "Cavalier colérique",
+    "roles": [
+      "Combattant"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Noxus",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2016,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Kled.png"
+  },
+  {
+    "id": "KogMaw",
+    "name": "Kog'Maw",
+    "title": "Gueule des abysses",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Néant",
+    "gender": "Autre",
+    "species": "Néant",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Hybride",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/KogMaw.png"
+  },
+  {
+    "id": "Leblanc",
+    "name": "LeBlanc",
+    "title": "Manipulatrice",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Leblanc.png"
+  },
+  {
+    "id": "LeeSin",
+    "name": "Lee Sin",
+    "title": "Moine aveugle",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Énergie",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/LeeSin.png"
+  },
+  {
+    "id": "Leona",
+    "name": "Leona",
+    "title": "Aube radieuse",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Targon",
+    "gender": "Femme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Leona.png"
+  },
+  {
+    "id": "Lillia",
+    "name": "Lillia",
+    "title": "Fleur timide",
+    "roles": [
+      "Combattant",
+      "Mage"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Ionia",
+    "gender": "Femme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2020,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Lillia.png"
+  },
+  {
+    "id": "Lissandra",
+    "name": "Lissandra",
+    "title": "Sorcière de glace",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Freljord",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2013,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Lissandra.png"
+  },
+  {
+    "id": "Locke",
+    "name": "Locke",
+    "title": "Exorciste cendré",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Runeterra",
+    "gender": "Autre",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2025,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Locke_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Locke.png"
+  },
+  {
+    "id": "Lucian",
+    "name": "Lucian",
+    "title": "Purificateur",
+    "roles": [
+      "Tireur",
+      "Assassin"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2013,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Lucian.png"
+  },
+  {
+    "id": "Lulu",
+    "name": "Lulu",
+    "title": "Sorcière féérique",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Bandle",
+    "gender": "Femme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Lulu.png"
+  },
+  {
+    "id": "Lux",
+    "name": "Lux",
+    "title": "Dame de lumière",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid",
+      "Support"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Lux.png"
+  },
+  {
+    "id": "Malphite",
+    "name": "Malphite",
+    "title": "Éclat du monolithe",
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Ixtal",
+    "gender": "Homme",
+    "species": "Robot / Golem",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Malphite.png"
+  },
+  {
+    "id": "Malzahar",
+    "name": "Malzahar",
+    "title": "Prophète du Néant",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Néant",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Malzahar.png"
+  },
+  {
+    "id": "Maokai",
+    "name": "Maokai",
+    "title": "Tréant torturé",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Support",
+      "Jungle",
+      "Top"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Maokai.png"
+  },
+  {
+    "id": "MasterYi",
+    "name": "Maître Yi",
+    "title": "Fine lame Wuju",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/MasterYi.png"
+  },
+  {
+    "id": "Mel",
+    "name": "Mel",
+    "title": "Reflet de l'âme",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid",
+      "Support"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2025,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mel_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Mel.png"
+  },
+  {
+    "id": "Milio",
+    "name": "Milio",
+    "title": "Douce flamme",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Ixtal",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2023,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Milio.png"
+  },
+  {
+    "id": "MissFortune",
+    "name": "Miss Fortune",
+    "title": "Chasseuse de primes",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Bilgewater",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/MissFortune.png"
+  },
+  {
+    "id": "Mordekaiser",
+    "name": "Mordekaiser",
+    "title": "Revenant de fer",
+    "roles": [
+      "Combattant",
+      "Mage"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Noxus",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Mordekaiser.png"
+  },
+  {
+    "id": "Morgana",
+    "name": "Morgana",
+    "title": "Déchue",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support",
+      "Mid"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Morgana.png"
+  },
+  {
+    "id": "Naafiri",
+    "name": "Naafiri",
+    "title": "la meute de fer",
+    "roles": [
+      "Assassin",
+      "Combattant"
+    ],
+    "lanes": [
+      "Mid",
+      "Jungle"
+    ],
+    "region": "Shurima",
+    "gender": "Femme",
+    "species": "Darkin",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2023,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Naafiri.png"
+  },
+  {
+    "id": "Nami",
+    "name": "Nami",
+    "title": "Aquamancienne",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Runeterra",
+    "gender": "Femme",
+    "species": "Vastaya",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Nami.png"
+  },
+  {
+    "id": "Nasus",
+    "name": "Nasus",
+    "title": "Gardien des sables",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Shurima",
+    "gender": "Homme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Nasus.png"
+  },
+  {
+    "id": "Nautilus",
+    "name": "Nautilus",
+    "title": "Titan des profondeurs",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Bilgewater",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Nautilus.png"
+  },
+  {
+    "id": "Neeko",
+    "name": "Neeko",
+    "title": "Caméléon curieux",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid",
+      "Support"
+    ],
+    "region": "Ixtal",
+    "gender": "Femme",
+    "species": "Vastaya",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2018,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Neeko.png"
+  },
+  {
+    "id": "Nidalee",
+    "name": "Nidalee",
+    "title": "Chasseresse bestiale",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Ixtal",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Nidalee.png"
+  },
+  {
+    "id": "Nilah",
+    "name": "Nilah",
+    "title": "Joie incarnée",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Bilgewater",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2022,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Nilah.png"
+  },
+  {
+    "id": "Nocturne",
+    "name": "Nocturne",
+    "title": "Éternel cauchemar",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Démon",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Nocturne.png"
+  },
+  {
+    "id": "Nunu",
+    "name": "Nunu et Willump",
+    "title": "Le Garçon et son yéti",
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Nunu.png"
+  },
+  {
+    "id": "Olaf",
+    "name": "Olaf",
+    "title": "Berzerker",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Olaf.png"
+  },
+  {
+    "id": "Orianna",
+    "name": "Orianna",
+    "title": "Demoiselle mécanique",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Piltover",
+    "gender": "Femme",
+    "species": "Robot / Golem",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Orianna.png"
+  },
+  {
+    "id": "Ornn",
+    "name": "Ornn",
+    "title": "Dieu de la forge volcanique",
+    "roles": [
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2017,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ornn.png"
+  },
+  {
+    "id": "Pantheon",
+    "name": "Pantheon",
+    "title": "Lance éternelle",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle",
+      "Mid",
+      "Support"
+    ],
+    "region": "Targon",
+    "gender": "Homme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Pantheon.png"
+  },
+  {
+    "id": "Poppy",
+    "name": "Poppy",
+    "title": "Gardienne du marteau",
+    "roles": [
+      "Tank",
+      "Combattant"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle",
+      "Support"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Yordle",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Poppy.png"
+  },
+  {
+    "id": "Pyke",
+    "name": "Pyke",
+    "title": "Éventreur des abysses",
+    "roles": [
+      "Support",
+      "Assassin"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Bilgewater",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2018,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Pyke.png"
+  },
+  {
+    "id": "Qiyana",
+    "name": "Qiyana",
+    "title": "Impératrice des éléments",
+    "roles": [
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Jungle"
+    ],
+    "region": "Ixtal",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2019,
+    "has_dash": false,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Qiyana.png"
+  },
+  {
+    "id": "Quinn",
+    "name": "Quinn",
+    "title": "Ailes de Demacia",
+    "roles": [
+      "Tireur",
+      "Assassin"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2013,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Quinn.png"
+  },
+  {
+    "id": "Rakan",
+    "name": "Rakan",
+    "title": "Charmeur",
+    "roles": [
+      "Support"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Vastaya",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2017,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Rakan.png"
+  },
+  {
+    "id": "Rammus",
+    "name": "Rammus",
+    "title": "Tatou blindé",
+    "roles": [
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Shurima",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Rammus.png"
+  },
+  {
+    "id": "RekSai",
+    "name": "Rek'Sai",
+    "title": "Traqueuse du Néant",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Néant",
+    "gender": "Femme",
+    "species": "Néant",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2014,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/RekSai.png"
+  },
+  {
+    "id": "Rell",
+    "name": "Rell",
+    "title": "Cavalière de fer",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2020,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Rell.png"
+  },
+  {
+    "id": "Renata",
+    "name": "Renata Glasc",
+    "title": "Baronne de la chimie",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Zaun",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2022,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Renata.png"
+  },
+  {
+    "id": "Renekton",
+    "name": "Renekton",
+    "title": "Dévoreur des sables",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Shurima",
+    "gender": "Homme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Renekton.png"
+  },
+  {
+    "id": "Rengar",
+    "name": "Rengar",
+    "title": "Fier traqueur",
+    "roles": [
+      "Assassin",
+      "Combattant"
+    ],
+    "lanes": [
+      "Jungle",
+      "Top"
+    ],
+    "region": "Ixtal",
+    "gender": "Homme",
+    "species": "Vastaya",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Rengar.png"
+  },
+  {
+    "id": "Riven",
+    "name": "Riven",
+    "title": "Exilée brisée",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Riven.png"
+  },
+  {
+    "id": "Rumble",
+    "name": "Rumble",
+    "title": "Menace mécanisée",
+    "roles": [
+      "Combattant",
+      "Mage"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Bandle",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Rumble.png"
+  },
+  {
+    "id": "Ryze",
+    "name": "Ryze",
+    "title": "Mage runique",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ryze.png"
+  },
+  {
+    "id": "Samira",
+    "name": "Samira",
+    "title": "Rose du désert",
+    "roles": [
+      "Tireur",
+      "Assassin"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Noxus",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2020,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Samira.png"
+  },
+  {
+    "id": "Sejuani",
+    "name": "Sejuani",
+    "title": "Fureur du nord",
+    "roles": [
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Freljord",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Sejuani.png"
+  },
+  {
+    "id": "Senna",
+    "name": "Senna",
+    "title": "Rédemptrice",
+    "roles": [
+      "Support",
+      "Tireur"
+    ],
+    "lanes": [
+      "Support",
+      "ADC"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2019,
+    "has_dash": false,
+    "has_stealth": true,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Senna.png"
+  },
+  {
+    "id": "Sett",
+    "name": "Sett",
+    "title": "Patron",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Vastaya",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2020,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Sett.png"
+  },
+  {
+    "id": "Shaco",
+    "name": "Shaco",
+    "title": "Bouffon des ténèbres",
+    "roles": [
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle",
+      "Support"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Démon",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Hybride",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Shaco.png"
+  },
+  {
+    "id": "Shen",
+    "name": "Shen",
+    "title": "Œil du crépuscule",
+    "roles": [
+      "Tank"
+    ],
+    "lanes": [
+      "Top",
+      "Support"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Énergie",
+    "damage_type": "Hybride",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Shen.png"
+  },
+  {
+    "id": "Shyvana",
+    "name": "Shyvana",
+    "title": "Demi-dragon",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Dragon",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Hybride",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Shyvana.png"
+  },
+  {
+    "id": "Singed",
+    "name": "Singed",
+    "title": "Chimiste fou",
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Singed.png"
+  },
+  {
+    "id": "Sion",
+    "name": "Sion",
+    "title": "Colosse mort-vivant",
+    "roles": [
+      "Tank",
+      "Combattant"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Noxus",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Sion.png"
+  },
+  {
+    "id": "Sivir",
+    "name": "Sivir",
+    "title": "Mercenaire du désert",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Shurima",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Sivir.png"
+  },
+  {
+    "id": "Skarner",
+    "name": "Skarner",
+    "title": "Souverain originel",
+    "roles": [
+      "Tank",
+      "Combattant"
+    ],
+    "lanes": [
+      "Jungle",
+      "Top"
+    ],
+    "region": "Ixtal",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Skarner.png"
+  },
+  {
+    "id": "Smolder",
+    "name": "Smolder",
+    "title": "Dragonnet flamboyant",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "ADC",
+      "Mid"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Dragon",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2024,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Smolder_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Smolder.png"
+  },
+  {
+    "id": "Sona",
+    "name": "Sona",
+    "title": "Virtuose de la harpe",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Sona.png"
+  },
+  {
+    "id": "Soraka",
+    "name": "Soraka",
+    "title": "Enfant des étoiles",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Targon",
+    "gender": "Femme",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Soraka.png"
+  },
+  {
+    "id": "Swain",
+    "name": "Swain",
+    "title": "Grand général noxien",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid",
+      "Support"
+    ],
+    "region": "Noxus",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Swain.png"
+  },
+  {
+    "id": "Sylas",
+    "name": "Sylas",
+    "title": "Révolutionnaire déchaîné",
+    "roles": [
+      "Mage",
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Jungle"
+    ],
+    "region": "Demacia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2019,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Sylas.png"
+  },
+  {
+    "id": "Syndra",
+    "name": "Syndra",
+    "title": "Souveraine obscure",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Ionia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Syndra.png"
+  },
+  {
+    "id": "Seraphine",
+    "name": "Séraphine",
+    "title": "Chanteuse rêveuse",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support",
+      "Mid",
+      "ADC"
+    ],
+    "region": "Piltover",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2020,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Seraphine.png"
+  },
+  {
+    "id": "TahmKench",
+    "name": "Tahm Kench",
+    "title": "Roi des rivières",
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "lanes": [
+      "Support",
+      "Top"
+    ],
+    "region": "Bilgewater",
+    "gender": "Homme",
+    "species": "Démon",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2015,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/TahmKench.png"
+  },
+  {
+    "id": "Taliyah",
+    "name": "Taliyah",
+    "title": "Tisseuse de pierres",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid",
+      "Jungle"
+    ],
+    "region": "Shurima",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2016,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Taliyah.png"
+  },
+  {
+    "id": "Talon",
+    "name": "Talon",
+    "title": "Lame des ténèbres",
+    "roles": [
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Jungle"
+    ],
+    "region": "Noxus",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Talon.png"
+  },
+  {
+    "id": "Taric",
+    "name": "Taric",
+    "title": "Bouclier de Valoran",
+    "roles": [
+      "Support",
+      "Tank"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Targon",
+    "gender": "Homme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Taric.png"
+  },
+  {
+    "id": "Teemo",
+    "name": "Teemo",
+    "title": "Éclaireur de Bandle",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Bandle",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Teemo.png"
+  },
+  {
+    "id": "Thresh",
+    "name": "Thresh",
+    "title": "Garde aux chaînes",
+    "roles": [
+      "Support",
+      "Tank"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2013,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Thresh.png"
+  },
+  {
+    "id": "Tristana",
+    "name": "Tristana",
+    "title": "Canonnière yordle",
+    "roles": [
+      "Tireur",
+      "Assassin"
+    ],
+    "lanes": [
+      "ADC",
+      "Mid"
+    ],
+    "region": "Bandle",
+    "gender": "Femme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Tristana.png"
+  },
+  {
+    "id": "Trundle",
+    "name": "Trundle",
+    "title": "Roi des trolls",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Trundle.png"
+  },
+  {
+    "id": "Tryndamere",
+    "name": "Tryndamere",
+    "title": "Roi barbare",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Tryndamere.png"
+  },
+  {
+    "id": "TwistedFate",
+    "name": "Twisted Fate",
+    "title": "Maître des cartes",
+    "roles": [
+      "Mage",
+      "Tireur"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Bilgewater",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/TwistedFate.png"
+  },
+  {
+    "id": "Twitch",
+    "name": "Twitch",
+    "title": "Semeur de peste",
+    "roles": [
+      "Tireur",
+      "Assassin"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Twitch.png"
+  },
+  {
+    "id": "Udyr",
+    "name": "Udyr",
+    "title": "Gardien des esprits",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle",
+      "Top"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Hybride",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Udyr.png"
+  },
+  {
+    "id": "Urgot",
+    "name": "Urgot",
+    "title": "Broyeur",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Urgot.png"
+  },
+  {
+    "id": "Varus",
+    "name": "Varus",
+    "title": "Flèche de la vengeance",
+    "roles": [
+      "Tireur",
+      "Mage"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Darkin",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Varus.png"
+  },
+  {
+    "id": "Vayne",
+    "name": "Vayne",
+    "title": "Chasseresse nocturne",
+    "roles": [
+      "Tireur",
+      "Assassin"
+    ],
+    "lanes": [
+      "ADC",
+      "Top"
+    ],
+    "region": "Demacia",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Vayne.png"
+  },
+  {
+    "id": "Veigar",
+    "name": "Veigar",
+    "title": "Seigneur des maléfices",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Bandle",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Veigar.png"
+  },
+  {
+    "id": "Velkoz",
+    "name": "Vel'Koz",
+    "title": "Œil du Néant",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Support",
+      "Mid"
+    ],
+    "region": "Néant",
+    "gender": "Autre",
+    "species": "Néant",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2014,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Velkoz.png"
+  },
+  {
+    "id": "Vex",
+    "name": "Vex",
+    "title": "Ombre du désespoir",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Femme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2021,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Vex.png"
+  },
+  {
+    "id": "Vi",
+    "name": "Vi",
+    "title": "Pacifieuse de Piltover",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Piltover",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Vi.png"
+  },
+  {
+    "id": "Viego",
+    "name": "Viego",
+    "title": "Roi déchu",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Homme",
+    "species": "Mort-vivant",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2021,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Viego.png"
+  },
+  {
+    "id": "Viktor",
+    "name": "Viktor",
+    "title": "Héraut de l'arcane",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Viktor.png"
+  },
+  {
+    "id": "Vladimir",
+    "name": "Vladimir",
+    "title": "Saigneur pourpre",
+    "roles": [
+      "Mage",
+      "Combattant"
+    ],
+    "lanes": [
+      "Mid",
+      "Top"
+    ],
+    "region": "Noxus",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Ressource spéciale",
+    "damage_type": "Magique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Vladimir.png"
+  },
+  {
+    "id": "Volibear",
+    "name": "Volibear",
+    "title": "Tempête impitoyable",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top",
+      "Jungle"
+    ],
+    "region": "Freljord",
+    "gender": "Homme",
+    "species": "Divinité / Aspect",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Hybride",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Volibear.png"
+  },
+  {
+    "id": "Warwick",
+    "name": "Warwick",
+    "title": "Fureur déchaînée de Zaun",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle",
+      "Top"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Hybride",
+    "release_year": 2009,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Warwick.png"
+  },
+  {
+    "id": "MonkeyKing",
+    "name": "Wukong",
+    "title": "Roi des singes",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle",
+      "Top"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Vastaya",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": true,
+    "has_stealth": true,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/MonkeyKing.png"
+  },
+  {
+    "id": "Xayah",
+    "name": "Xayah",
+    "title": "Rebelle",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Ionia",
+    "gender": "Femme",
+    "species": "Vastaya",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2017,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Xayah.png"
+  },
+  {
+    "id": "Xerath",
+    "name": "Xerath",
+    "title": "Mage suprême",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Mid",
+      "Support"
+    ],
+    "region": "Shurima",
+    "gender": "Homme",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Xerath.png"
+  },
+  {
+    "id": "XinZhao",
+    "name": "Xin Zhao",
+    "title": "Sénéchal de Demacia",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "region": "Demacia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2010,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/XinZhao.png"
+  },
+  {
+    "id": "Yasuo",
+    "name": "Yasuo",
+    "title": "Disgracié",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Top"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Physique",
+    "release_year": 2013,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Yasuo.png"
+  },
+  {
+    "id": "Yone",
+    "name": "Yone",
+    "title": "Inoublié",
+    "roles": [
+      "Combattant",
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Top"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Hybride",
+    "release_year": 2020,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Yone.png"
+  },
+  {
+    "id": "Yorick",
+    "name": "Yorick",
+    "title": "Berger des âmes",
+    "roles": [
+      "Combattant",
+      "Tank"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Îles Obscures",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2011,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Yorick.png"
+  },
+  {
+    "id": "Yunara",
+    "name": "Yunara",
+    "title": "Foi inébranlable",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Runeterra",
+    "gender": "Autre",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2025,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yunara_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Yunara.png"
+  },
+  {
+    "id": "Yuumi",
+    "name": "Yuumi",
+    "title": "Gardienne du Grimoire",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support"
+    ],
+    "region": "Bandle",
+    "gender": "Femme",
+    "species": "Monstre / Esprit",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2019,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": true,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Yuumi.png"
+  },
+  {
+    "id": "Zaahen",
+    "name": "Zaahen",
+    "title": "Incorruptible",
+    "roles": [
+      "Combattant"
+    ],
+    "lanes": [
+      "Top"
+    ],
+    "region": "Runeterra",
+    "gender": "Autre",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2025,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zaahen_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Zaahen.png"
+  },
+  {
+    "id": "Zac",
+    "name": "Zac",
+    "title": "Arme secrète",
+    "roles": [
+      "Tank",
+      "Combattant"
+    ],
+    "lanes": [
+      "Jungle",
+      "Top"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Monstre / Esprit",
+    "range_type": "Mêlée",
+    "resource": "Ressource spéciale",
+    "damage_type": "Magique",
+    "release_year": 2013,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Zac.png"
+  },
+  {
+    "id": "Zed",
+    "name": "Zed",
+    "title": "Maître des ombres",
+    "roles": [
+      "Assassin"
+    ],
+    "lanes": [
+      "Mid",
+      "Jungle"
+    ],
+    "region": "Ionia",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "Mêlée",
+    "resource": "Énergie",
+    "damage_type": "Physique",
+    "release_year": 2012,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Zed.png"
+  },
+  {
+    "id": "Zeri",
+    "name": "Zeri",
+    "title": "Étincelle de Zaun",
+    "roles": [
+      "Tireur"
+    ],
+    "lanes": [
+      "ADC"
+    ],
+    "region": "Zaun",
+    "gender": "Femme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Physique",
+    "release_year": 2022,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Zeri.png"
+  },
+  {
+    "id": "Ziggs",
+    "name": "Ziggs",
+    "title": "Expert des Hexplosifs",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "ADC",
+      "Mid"
+    ],
+    "region": "Zaun",
+    "gender": "Homme",
+    "species": "Yordle",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": true,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ziggs.png"
+  },
+  {
+    "id": "Zilean",
+    "name": "Zilean",
+    "title": "Gardien du Temps",
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "lanes": [
+      "Support",
+      "Mid"
+    ],
+    "region": "Runeterra",
+    "gender": "Homme",
+    "species": "Humain",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2009,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": false,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Zilean.png"
+  },
+  {
+    "id": "Zoe",
+    "name": "Zoé",
+    "title": "Manifestation du Crépuscule",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid"
+    ],
+    "region": "Targon",
+    "gender": "Femme",
+    "species": "Divinité / Aspect",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2017,
+    "has_dash": true,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": false,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Zoe.png"
+  },
+  {
+    "id": "Zyra",
+    "name": "Zyra",
+    "title": "Dame aux ronces",
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "lanes": [
+      "Support",
+      "Jungle"
+    ],
+    "region": "Ixtal",
+    "gender": "Femme",
+    "species": "Monstre / Esprit",
+    "range_type": "À distance",
+    "resource": "Mana",
+    "damage_type": "Magique",
+    "release_year": 2012,
+    "has_dash": false,
+    "has_stealth": false,
+    "has_heal_shield": false,
+    "has_hard_cc": true,
+    "has_global_ult": false,
+    "has_summon": true,
+    "sprite": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Zyra.png"
+  }
+]

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
+<html lang="fr" data-theme="dark" data-universe="pokemon">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="PokéNator — Pensez à n'importe lequel des 1025 Pokémon (Générations 1 à 9) et laissez le Pokédex bayésien le deviner !"
+    content="PokéNator & LoLNator — Pensez à un Pokémon ou un Champion de League of Legends et laissez le moteur bayésien le deviner !"
   />
-  <title>PokéNator — Le Pokédex qui lit dans vos pensées</title>
+  <title>PokéNator &amp; LoLNator — Devinette Bayésienne</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -24,7 +24,7 @@
   </div>
 
   <div class="pokedex-shell">
-    <!-- En-tête style Pokédex -->
+    <!-- En-tête adaptatif Pokédex / Hextech -->
     <header class="pokedex-header">
       <div class="header-left">
         <div class="dex-lens" aria-hidden="true">
@@ -36,16 +36,40 @@
           <span class="led led-green"></span>
         </div>
         <div class="brand-group">
-          <span class="brand-name">PokéNator</span>
-          <span class="brand-sub">DEX-AI v2</span>
+          <span id="brand-name" class="brand-name">PokéNator</span>
+          <span id="brand-sub" class="brand-sub">DEX-AI v2</span>
         </div>
       </div>
 
       <div class="header-right">
-        <span id="db-badge" class="db-badge" title="Base de données Pokémon chargée">
+        <div class="universe-pill" role="tablist" aria-label="Changer d'univers">
+          <button
+            id="switch-pokemon"
+            class="universe-pill-btn active"
+            data-universe="pokemon"
+            role="tab"
+            aria-selected="true"
+            type="button"
+          >
+            Pokémon
+          </button>
+          <button
+            id="switch-lol"
+            class="universe-pill-btn"
+            data-universe="lol"
+            role="tab"
+            aria-selected="false"
+            type="button"
+          >
+            LoL
+          </button>
+        </div>
+
+        <span id="db-badge" class="db-badge" title="Base de données chargée">
           <span class="db-dot"></span>
           <span id="db-count-header">Chargement…</span>
         </span>
+
         <button
           id="btn-theme"
           class="icon-btn"
@@ -64,42 +88,78 @@
       </div>
     </header>
 
-    <!-- Écran principal du Pokédex -->
+    <!-- Écran principal -->
     <main class="pokedex-screen">
       <!-- Bannière d'erreur de chargement -->
       <div id="load-error" class="alert-box hidden" role="alert">
-        <strong>Impossible de charger <code>data/pokemons.json</code>.</strong>
+        <strong id="load-error-title">Impossible de charger la base de données.</strong>
         <p>
           Si vous avez ouvert <code>index.html</code> directement en fichier local (<code>file://</code>),
-          lancez un petit serveur statique depuis le dossier du projet :
+          lancez un serveur statique depuis le dossier du projet :
           <code>python -m http.server 8000</code> puis ouvrez <code>http://localhost:8000</code>.
         </p>
       </div>
 
       <!-- 1. ÉCRAN D'ACCUEIL -->
       <section id="screen-home" class="screen active" aria-labelledby="home-title">
+        <!-- Sélecteur d'univers sur l'accueil -->
+        <div class="universe-selector" role="group" aria-label="Choisir un univers">
+          <button
+            id="card-univ-pokemon"
+            class="univ-card active"
+            data-universe="pokemon"
+            type="button"
+          >
+            <span class="univ-icon" aria-hidden="true">⚡</span>
+            <span class="univ-info">
+              <span class="univ-title">Pokémon</span>
+              <span id="univ-count-pokemon" class="univ-sub">Chargement…</span>
+            </span>
+          </button>
+          <button
+            id="card-univ-lol"
+            class="univ-card"
+            data-universe="lol"
+            type="button"
+          >
+            <span class="univ-icon" aria-hidden="true">⚔️</span>
+            <span class="univ-info">
+              <span class="univ-title">League of Legends</span>
+              <span id="univ-count-lol" class="univ-sub">Chargement…</span>
+            </span>
+          </button>
+        </div>
+
         <div class="hero-visual" aria-hidden="true">
           <div class="scanner-orb">
             <div class="scanner-ring ring-1"></div>
             <div class="scanner-ring ring-2"></div>
-            <svg class="pokeball-svg" viewBox="0 0 100 100" fill="none">
+            <!-- Emblème Pokémon -->
+            <svg class="emblem-svg emblem-pokemon" viewBox="0 0 100 100" fill="none">
               <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="4" opacity="0.25" />
-              <path d="M8 50 A42 42 0 0 1 92 50 Z" fill="var(--accent-crimson)" opacity="0.92" />
+              <path d="M8 50 A42 42 0 0 1 92 50 Z" fill="var(--accent-primary)" opacity="0.92" />
               <path d="M8 50 A42 42 0 0 0 92 50 Z" fill="var(--surface-elevated)" />
               <line x1="6" y1="50" x2="94" y2="50" stroke="var(--bg-chassis)" stroke-width="6" />
               <circle cx="50" cy="50" r="14" fill="var(--bg-chassis)" />
               <circle cx="50" cy="50" r="8" fill="var(--accent-cyan)" class="orb-core" />
             </svg>
+            <!-- Emblème Hextech League of Legends -->
+            <svg class="emblem-svg emblem-lol" viewBox="0 0 100 100" fill="none">
+              <polygon points="50,6 88,28 88,72 50,94 12,72 12,28" stroke="var(--accent-primary)" stroke-width="4" fill="var(--surface-card)" />
+              <polygon points="50,18 76,34 76,66 50,82 24,66 24,34" stroke="var(--accent-cyan)" stroke-width="2" fill="rgba(10, 200, 185, 0.12)" />
+              <path d="M50 28 L64 50 L50 72 L36 50 Z" fill="var(--accent-cyan)" class="orb-core" />
+              <circle cx="50" cy="50" r="6" fill="#fffbeb" />
+            </svg>
           </div>
         </div>
 
         <h1 id="home-title" class="hero-title">
-          Pensez à un <span class="gradient-text">Pokémon</span>,<br />je vais le deviner !
+          Pensez à un <span id="home-title-highlight" class="gradient-text">Pokémon</span>,<br />je vais le deviner !
         </h1>
 
-        <p class="hero-desc">
+        <p id="home-desc" class="hero-desc">
           Choisissez secrètement un Pokémon dans votre tête, répondez à mes questions avec
-          sincérité (même si vous hésitez !) et laissez mon moteur bayésien remonter la piste.
+          sincérité (même si vous hésitez !) et laissez le moteur bayésien remonter la piste.
         </p>
 
         <div class="home-stats">
@@ -108,12 +168,12 @@
             <span id="home-db-count" class="stat-value">—</span>
           </div>
           <div class="stat-pill">
-            <span class="stat-label">Générations</span>
-            <span id="home-gen-range" class="stat-value">1 à 9</span>
+            <span id="home-meta-label" class="stat-label">Générations</span>
+            <span id="home-meta-value" class="stat-value">1 à 9</span>
           </div>
           <div class="stat-pill">
-            <span class="stat-label">Moteur</span>
-            <span class="stat-value">Bayésien</span>
+            <span class="stat-label">Questions</span>
+            <span id="home-q-count" class="stat-value">—</span>
           </div>
         </div>
 
@@ -126,12 +186,16 @@
           </button>
         </div>
 
-        <!-- Aperçu pratique affiché uniquement quand la base est en mode échantillon (<= 30 Pokémon) -->
+        <!-- Astuce d'enrichissement (attaques/stats Pokémon si non encore re-fetché) -->
+        <div id="enrich-tip" class="tip-banner hidden">
+          <span class="tip-icon" aria-hidden="true">💡</span>
+          <p id="enrich-tip-text"></p>
+        </div>
+
+        <!-- Aperçu pratique affiché en mode échantillon -->
         <details id="sample-drawer" class="sample-drawer hidden">
-          <summary>Mode échantillon : voir les Pokémon actuellement chargés</summary>
-          <p class="sample-note">
-            Lancez <code>python scripts/fetch_pokemons.py</code> pour générer la base complète des 1025 Pokémon.
-          </p>
+          <summary id="sample-summary">Mode échantillon : voir les entrées actuellement chargées</summary>
+          <p id="sample-note" class="sample-note"></p>
           <div id="sample-list" class="sample-chips"></div>
         </details>
       </section>
@@ -157,12 +221,17 @@
         <div class="dialogue-stage">
           <div id="ai-avatar" class="ai-avatar state-searching" aria-hidden="true">
             <div class="avatar-pulse"></div>
-            <svg viewBox="0 0 64 64" fill="none">
+            <svg class="avatar-svg-pokemon" viewBox="0 0 64 64" fill="none">
               <circle cx="32" cy="32" r="28" fill="var(--surface-card)" stroke="var(--accent-cyan)" stroke-width="2.5" />
-              <path d="M6 32 A26 26 0 0 1 58 32 Z" fill="var(--accent-crimson)" opacity="0.88" />
+              <path d="M6 32 A26 26 0 0 1 58 32 Z" fill="var(--accent-primary)" opacity="0.88" />
               <line x1="4" y1="32" x2="60" y2="32" stroke="var(--bg-chassis)" stroke-width="4" />
               <circle cx="32" cy="32" r="9" fill="var(--bg-chassis)" />
               <circle cx="32" cy="32" r="5" fill="var(--accent-cyan)" class="avatar-eye" />
+            </svg>
+            <svg class="avatar-svg-lol" viewBox="0 0 64 64" fill="none">
+              <polygon points="32,4 56,18 56,46 32,60 8,46 8,18" fill="var(--surface-card)" stroke="var(--accent-primary)" stroke-width="2.5" />
+              <path d="M32 16 L44 32 L32 48 L20 32 Z" fill="var(--accent-cyan)" opacity="0.9" />
+              <circle cx="32" cy="32" r="4" fill="#fffbeb" />
             </svg>
           </div>
 
@@ -210,7 +279,7 @@
           </button>
           <span class="shortcut-hint">Raccourcis : 1–5 · Retour arrière</span>
           <button id="btn-restart-q" class="btn btn-ghost btn-subtle" type="button">
-            Recommencer
+            Accueil
           </button>
         </div>
       </section>
@@ -222,17 +291,18 @@
           <h2 class="reveal-title">Je pense que c'est…</h2>
         </div>
 
-        <article class="pokemon-card">
+        <article id="guess-card" class="pokemon-card">
           <div class="card-glow" aria-hidden="true"></div>
           <div class="card-top-row">
             <span id="guess-id" class="dex-number">#0025</span>
-            <span id="guess-gen" class="gen-tag">Gén. 1</span>
+            <span id="guess-tag" class="gen-tag">Gén. 1</span>
           </div>
-          <div class="artwork-stage">
+          <div id="guess-stage" class="artwork-stage">
             <img id="guess-sprite" class="pokemon-artwork" src="" alt="" />
           </div>
           <h3 id="guess-name" class="pokemon-name">Pikachu</h3>
-          <div id="guess-types" class="types-row"></div>
+          <p id="guess-subtitle" class="card-subtitle hidden"></p>
+          <div id="guess-badges" class="types-row"></div>
           <p id="guess-meta" class="guess-meta">Certitude : 92 % · Question #5</p>
         </article>
 
@@ -255,26 +325,30 @@
       <!-- 4. ÉCRAN DE VICTOIRE -->
       <section id="screen-victory" class="screen" aria-live="polite">
         <div class="victory-banner">
-          <span class="victory-pill">Pokémon identifié !</span>
+          <span id="victory-pill" class="victory-pill">Identifié !</span>
           <h2 id="victory-headline" class="reveal-title">Trouvé en 5 questions !</h2>
         </div>
 
-        <article class="pokemon-card pokemon-card-victory">
+        <article id="victory-card" class="pokemon-card pokemon-card-victory">
           <div class="card-glow card-glow-victory" aria-hidden="true"></div>
           <div class="card-top-row">
             <span id="victory-id" class="dex-number">#0025</span>
-            <span id="victory-gen" class="gen-tag">Gén. 1</span>
+            <span id="victory-tag" class="gen-tag">Gén. 1</span>
           </div>
-          <div class="artwork-stage">
+          <div id="victory-stage" class="artwork-stage">
             <img id="victory-sprite" class="pokemon-artwork" src="" alt="" />
           </div>
           <h3 id="victory-name" class="pokemon-name">Pikachu</h3>
-          <div id="victory-types" class="types-row"></div>
+          <p id="victory-subtitle" class="card-subtitle hidden"></p>
+          <div id="victory-badges" class="types-row"></div>
         </article>
 
         <div class="end-actions">
           <button id="btn-replay-victory" class="btn btn-primary btn-lg" type="button">
             Rejouer une partie
+          </button>
+          <button id="btn-home-victory" class="btn btn-secondary btn-lg" type="button">
+            Changer d'univers
           </button>
         </div>
       </section>
@@ -282,10 +356,10 @@
       <!-- 5. FIN DE PARTIE / TOP 5 -->
       <section id="screen-fail" class="screen" aria-live="polite">
         <div class="reveal-header">
-          <span class="fail-kicker">Bien joué, dresseur !</span>
+          <span id="fail-kicker" class="fail-kicker">Bien joué !</span>
           <h2 class="reveal-title">Vous m'avez posé une colle !</h2>
           <p id="fail-subtitle" class="fail-subtitle">
-            Voici les 5 Pokémon les plus probables restants selon vos réponses :
+            Voici les 5 meilleures pistes restantes selon vos réponses :
           </p>
         </div>
 
@@ -295,13 +369,16 @@
           <button id="btn-replay-fail" class="btn btn-primary btn-lg" type="button">
             Rejouer
           </button>
+          <button id="btn-home-fail" class="btn btn-secondary btn-lg" type="button">
+            Changer d'univers
+          </button>
         </div>
       </section>
     </main>
 
     <footer class="pokedex-footer">
       <span>100 % statique · Compatible GitHub Pages</span>
-      <span>Données &amp; Artworks : PokeAPI</span>
+      <span id="footer-source">Données &amp; Artworks : PokeAPI</span>
     </footer>
   </div>
 

@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """
 fetch_pokemons.py — Récupère les 1025 Pokémon (Générations 1 à 9) depuis PokeAPI
-et génère le fichier statique data/pokemons.json pour l'application PokéNator.
+et génère le fichier statique data/pokemons.json pour PokéNator.
 
-Aucune dépendance externe requise (utilise uniquement la bibliothèque standard Python 3).
+Inclut désormais :
+- Attaques emblématiques apprenables (Séisme, Surf, Vol, Lance-Flammes, Tonnerre, etc.)
+- Statistiques de combat (BST, vitesse, profil physique/spécial, résistance)
+- Statuts enrichis (starter, pseudo-légendaire, asexué, forme régionale, méga, gigamax)
 
-Exemples d'utilisation :
+Aucune dépendance externe requise (bibliothèque standard Python 3 uniquement).
+
+Exemples :
     python scripts/fetch_pokemons.py
-    python scripts/fetch_pokemons.py --workers 10 --output data/pokemons.json
-    python scripts/fetch_pokemons.py --limit 151  # Tester uniquement la 1ère génération
+    python scripts/fetch_pokemons.py --workers 10
+    python scripts/fetch_pokemons.py --limit 151
 """
 
 from __future__ import annotations
@@ -22,7 +27,7 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 API_BASE = "https://pokeapi.co/api/v2"
 ARTWORK_URL_TEMPLATE = (
@@ -30,7 +35,7 @@ ARTWORK_URL_TEMPLATE = (
     "sprites/pokemon/other/official-artwork/{id}.png"
 )
 TOTAL_POKEMONS_DEFAULT = 1025
-USER_AGENT = "PokeNator-Fetcher/1.0 (+https://pokeapi.co)"
+USER_AGENT = "PokeNator-Fetcher/2.0 (+https://pokeapi.co)"
 
 GENERATION_MAP: Dict[str, int] = {
     "generation-i": 1,
@@ -107,6 +112,65 @@ HABITAT_FR: Dict[str, str] = {
     "waters-edge": "bord de l'eau",
 }
 
+# Attaques emblématiques extraites de pokemon.moves -> nom français normalisé
+NOTABLE_MOVES_FR: Dict[str, str] = {
+    "earthquake": "Séisme",
+    "surf": "Surf",
+    "fly": "Vol",
+    "flamethrower": "Lance-Flammes",
+    "thunderbolt": "Tonnerre",
+    "ice-beam": "Laser Glace",
+    "psychic": "Psyko",
+    "shadow-ball": "Ball'Ombre",
+    "swords-dance": "Danse Lames",
+    "calm-mind": "Plénitude",
+    "close-combat": "Close Combat",
+    "dragon-claw": "Draco-Griffe",
+    "solar-beam": "Lance-Soleil",
+    "dig": "Tunnel",
+    "hyper-beam": "Ultralaser",
+    "dark-pulse": "Vibrobscur",
+    "dazzling-gleam": "Éclat Magique",
+    "stealth-rock": "Piège de Roc",
+    "iron-tail": "Queue de Fer",
+    "energy-ball": "Éco-Sphère",
+    "explosion": "Explosion",
+    "recover": "Soin",
+    "roost": "Atterrissage",
+    "u-turn": "Demi-Tour",
+    "will-o-wisp": "Feu Follet",
+    "thunder-wave": "Cage Éclair",
+}
+
+# IDs nationaux des 27 lignées de Starters (Générations 1 à 9)
+STARTER_IDS: Set[int] = {
+    *range(1, 10),      # Bulbizarre, Salamèche, Carapuce
+    *range(152, 161),   # Germignon, Héricendre, Kaiminus
+    *range(252, 261),   # Arcko, Poussifeu, Gobou
+    *range(387, 396),   # Tortipouss, Ouisticram, Tiplouf
+    *range(495, 504),   # Vipélierre, Gruikui, Moustillon
+    *range(650, 659),   # Marisson, Feunnec, Grenousse
+    *range(722, 731),   # Brindibou, Flamiaou, Otaquin
+    *range(810, 819),   # Ouistempo, Flambino, Larméléon
+    *range(906, 915),   # Poussacha, Chochodile, Coiffeton
+}
+
+# IDs nationaux des lignées Pseudo-Légendaires (Générations 1 à 9)
+PSEUDO_LEGENDARY_IDS: Set[int] = {
+    147, 148, 149,      # Minidraco -> Dracolosse
+    246, 247, 248,      # Embrylex -> Tyranocif
+    371, 372, 373,      # Draby -> Drattak
+    374, 375, 376,      # Terhal -> Métalosse
+    443, 444, 445,      # Griknot -> Carchacrok
+    633, 634, 635,      # Solochi -> Trioxhydre
+    704, 705, 706,      # Mucuscule -> Muplodocus
+    782, 783, 784,      # Bébécaille -> Ékaïser
+    885, 886, 887,      # Fantyrm -> Lanssorien
+    996, 997, 998,      # Frigodo -> Glaivodo
+}
+
+REGIONAL_SUFFIXES = ("-alola", "-galar", "-hisui", "-paldea")
+
 
 class RateLimitedFetcher:
     """Client HTTP thread-safe avec retries exponentiels et cache des chaînes d'évolution."""
@@ -123,7 +187,6 @@ class RateLimitedFetcher:
         self._chain_inflight: Dict[str, threading.Event] = {}
 
     def fetch_json(self, url: str) -> Dict[str, Any]:
-        """Effectue une requête GET JSON avec respect du débit et backoff sur erreurs transitoires."""
         last_err: Optional[Exception] = None
         for attempt in range(self.max_retries):
             with self._rate_lock:
@@ -133,7 +196,10 @@ class RateLimitedFetcher:
                     time.sleep(self.min_delay - elapsed)
                 self._last_request_ts = time.monotonic()
 
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
+            req = urllib.request.Request(
+                url,
+                headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
+            )
             try:
                 with urllib.request.urlopen(req, timeout=self.timeout) as resp:
                     return json.loads(resp.read().decode("utf-8"))
@@ -141,9 +207,12 @@ class RateLimitedFetcher:
                 last_err = exc
                 if exc.code == 404:
                     raise
-                # 429 Too Many Requests ou 5xx : attente exponentielle
                 retry_after = exc.headers.get("Retry-After") if exc.headers else None
-                wait_s = float(retry_after) if retry_after and retry_after.isdigit() else (1.0 * (2 ** attempt))
+                wait_s = (
+                    float(retry_after)
+                    if retry_after and retry_after.isdigit()
+                    else (1.0 * (2 ** attempt))
+                )
                 time.sleep(min(wait_s, 15.0))
             except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, OSError) as exc:
                 last_err = exc
@@ -152,10 +221,6 @@ class RateLimitedFetcher:
         raise RuntimeError(f"Échec après {self.max_retries} tentatives pour {url}: {last_err}")
 
     def get_evolution_stages(self, chain_url: Optional[str]) -> Dict[str, str]:
-        """
-        Retourne un mapping {species_name: stage} pour toute une chaîne d'évolution.
-        Cache partagé entre threads pour éviter les requêtes redondantes.
-        """
         if not chain_url:
             return {}
 
@@ -191,13 +256,6 @@ class RateLimitedFetcher:
 
 
 def parse_evolution_chain(root: Dict[str, Any]) -> Dict[str, str]:
-    """
-    Déduit le stade d'évolution de chaque espèce dans la chaîne :
-      - 'single' : espèce racine sans aucune évolution
-      - 'base'   : espèce racine ayant au moins une évolution
-      - 'middle' : évolution intermédiaire (a une pré-évolution ET une évolution suivante)
-      - 'final'  : stade terminal d'une lignée d'évolution
-    """
     stages: Dict[str, str] = {}
 
     def walk(node: Dict[str, Any], depth: int) -> None:
@@ -216,7 +274,6 @@ def parse_evolution_chain(root: Dict[str, Any]) -> Dict[str, str]:
 
 
 def extract_french_name(species_data: Dict[str, Any], fallback_slug: str) -> str:
-    """Extrait le nom français depuis species.names, avec repli sur l'anglais puis le slug."""
     names = species_data.get("names") or []
     english_name: Optional[str] = None
     for entry in names:
@@ -230,8 +287,47 @@ def extract_french_name(species_data: Dict[str, Any], fallback_slug: str) -> str
     return fallback_slug.replace("-", " ").title()
 
 
+def extract_combat_profile(pokemon_data: Dict[str, Any]) -> Dict[str, Any]:
+    stat_map: Dict[str, int] = {}
+    for entry in pokemon_data.get("stats") or []:
+        stat_name = (entry.get("stat") or {}).get("name")
+        if stat_name:
+            stat_map[stat_name] = int(entry.get("base_stat") or 0)
+
+    hp = stat_map.get("hp", 0)
+    atk = stat_map.get("attack", 0)
+    defense = stat_map.get("defense", 0)
+    sp_atk = stat_map.get("special-attack", 0)
+    sp_def = stat_map.get("special-defense", 0)
+    speed = stat_map.get("speed", 0)
+    bst = hp + atk + defense + sp_atk + sp_def + speed
+
+    if atk - sp_atk >= 15:
+        attack_style = "physique"
+    elif sp_atk - atk >= 15:
+        attack_style = "spécial"
+    else:
+        attack_style = "mixte"
+
+    is_bulky = hp >= 95 or defense >= 100 or sp_def >= 100
+    return {
+        "bst": bst,
+        "speed": speed,
+        "attack_style": attack_style,
+        "is_bulky": is_bulky,
+    }
+
+
+def extract_notable_moves(pokemon_data: Dict[str, Any]) -> List[str]:
+    learned: Set[str] = set()
+    for entry in pokemon_data.get("moves") or []:
+        move_slug = (entry.get("move") or {}).get("name", "")
+        if move_slug in NOTABLE_MOVES_FR:
+            learned.add(NOTABLE_MOVES_FR[move_slug])
+    return sorted(learned)
+
+
 def fetch_single_pokemon(fetcher: RateLimitedFetcher, poke_id: int) -> Dict[str, Any]:
-    """Récupère et normalise les données d'un Pokémon par son numéro national."""
     pokemon_data = fetcher.fetch_json(f"{API_BASE}/pokemon/{poke_id}")
     species_data = fetcher.fetch_json(f"{API_BASE}/pokemon-species/{poke_id}")
 
@@ -260,22 +356,25 @@ def fetch_single_pokemon(fetcher: RateLimitedFetcher, poke_id: int) -> Dict[str,
     is_legendary = bool(species_data.get("is_legendary", False))
     is_mythical = bool(species_data.get("is_mythical", False))
     is_baby = bool(species_data.get("is_baby", False))
+    is_genderless = species_data.get("gender_rate") == -1
 
     chain_url = (species_data.get("evolution_chain") or {}).get("url")
     chain_stages = fetcher.get_evolution_stages(chain_url)
     evolution_stage = chain_stages.get(species_slug, "single")
 
     varieties = species_data.get("varieties") or []
-    variety_names = [
-        (v.get("pokemon") or {}).get("name", "").lower()
-        for v in varieties
-    ]
+    variety_names = [(v.get("pokemon") or {}).get("name", "").lower() for v in varieties]
     has_mega = any("-mega" in vname for vname in variety_names)
     has_gmax = any("-gmax" in vname for vname in variety_names)
+    has_regional_form = any(
+        any(suffix in vname for suffix in REGIONAL_SUFFIXES) for vname in variety_names
+    )
 
-    # PokeAPI : height en décimètres, weight en hectogrammes
     height_m = round((pokemon_data.get("height") or 0) / 10.0, 1)
     weight_kg = round((pokemon_data.get("weight") or 0) / 10.0, 1)
+
+    combat = extract_combat_profile(pokemon_data)
+    notable_moves = extract_notable_moves(pokemon_data)
 
     return {
         "id": poke_id,
@@ -288,17 +387,25 @@ def fetch_single_pokemon(fetcher: RateLimitedFetcher, poke_id: int) -> Dict[str,
         "is_legendary": is_legendary,
         "is_mythical": is_mythical,
         "is_baby": is_baby,
+        "is_starter": poke_id in STARTER_IDS,
+        "is_pseudo_legendary": poke_id in PSEUDO_LEGENDARY_IDS,
+        "is_genderless": is_genderless,
         "evolution_stage": evolution_stage,
         "has_mega": has_mega,
         "has_gmax": has_gmax,
+        "has_regional_form": has_regional_form,
         "height_m": height_m,
         "weight_kg": weight_kg,
+        "bst": combat["bst"],
+        "speed": combat["speed"],
+        "attack_style": combat["attack_style"],
+        "is_bulky": combat["is_bulky"],
+        "notable_moves": notable_moves,
         "sprite": ARTWORK_URL_TEMPLATE.format(id=poke_id),
     }
 
 
 def render_progress(done: int, total: int, errors: int, start_time: float) -> None:
-    """Affiche une barre de progression compacte dans le terminal."""
     elapsed = max(time.monotonic() - start_time, 0.001)
     ratio = done / total if total else 1.0
     bar_width = 28
@@ -326,7 +433,7 @@ def main() -> int:
             pass
 
     parser = argparse.ArgumentParser(
-        description="Télécharge la base Pokédex (1 à 1025) depuis PokeAPI pour PokéNator."
+        description="Télécharge la base Pokédex enrichie (1 à 1025) depuis PokeAPI."
     )
     parser.add_argument("--start", type=int, default=1, help="ID de départ (défaut : 1)")
     parser.add_argument(
@@ -357,7 +464,10 @@ def main() -> int:
     total = len(ids)
     workers = max(1, min(args.workers, 16))
 
-    print(f"PokéNator — Récupération de {total} Pokémon (#{args.start} à #{args.limit}) avec {workers} threads...")
+    print(
+        f"PokéNator — Récupération enrichie de {total} Pokémon "
+        f"(#{args.start} à #{args.limit}) avec {workers} threads..."
+    )
     fetcher = RateLimitedFetcher(min_delay=0.03)
     results: List[Dict[str, Any]] = []
     failures: List[Tuple[int, str]] = []
@@ -378,9 +488,8 @@ def main() -> int:
             completed += 1
             render_progress(completed, total, len(failures), start_time)
 
-    print()  # Nouvelle ligne après la barre de progression
+    print()
 
-    # Seconde passe séquentielle sur les éventuels échecs isolés
     if failures:
         print(f"Nouvelle tentative pour {len(failures)} Pokémon en échec...")
         still_failed: List[Tuple[int, str]] = []
@@ -398,7 +507,7 @@ def main() -> int:
         json.dump(results, fh, ensure_ascii=False, indent=2)
 
     elapsed = time.monotonic() - start_time
-    print(f"Terminé en {elapsed:.1f}s : {len(results)} Pokémon enregistrés dans {args.output}")
+    print(f"Terminé en {elapsed:.1f}s : {len(results)} Pokémon enrichis enregistrés dans {args.output}")
     if failures:
         print(f"Attention : {len(failures)} échec(s) persistant(s) :", file=sys.stderr)
         for poke_id, msg in failures[:10]:
