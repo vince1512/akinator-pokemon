@@ -3,7 +3,7 @@
  * interface utilisateur, états de jeu, thème et historique.
  */
 
-import { ANSWER_TYPES, AkinatorEngine, UNIVERSE_TYPES } from './engine.js';
+import { ANSWER_TYPES, AkinatorEngine, UNIVERSE_TYPES } from './engine.js?v=2.2';
 
 const THEME_STORAGE_KEY = 'pokenator-theme';
 const UNIVERSE_STORAGE_KEY = 'pokenator-universe';
@@ -70,7 +70,7 @@ const dom = {
   loadError: document.getElementById('load-error'),
   loadErrorTitle: document.getElementById('load-error-title'),
 
-  switchButtons: document.querySelectorAll('[data-universe]'),
+  switchButtons: document.querySelectorAll('button[data-universe]'),
   univCountPokemon: document.getElementById('univ-count-pokemon'),
   univCountLol: document.getElementById('univ-count-lol'),
 

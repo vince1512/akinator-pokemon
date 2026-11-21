@@ -910,6 +910,7 @@ export class AkinatorEngine {
     this.CERTAINTY_THRESHOLD = 0.85;
     this.FIRST_FORCED_GUESS_AT = 20;
     this.MAX_QUESTIONS_LIMIT = 25;
+    this.lastOpeningQuestionId = null;
     this.reset();
   }
 
@@ -920,7 +921,7 @@ export class AkinatorEngine {
     this.history = [];
     this.questionCount = 0;
     this.currentQuestion = null;
-    this.lastCategory = null;
+    this.recentCategories = [];
     this.forcedGuessUsed = false;
   }
 
@@ -1002,6 +1003,18 @@ export class AkinatorEngine {
     return false;
   }
 
+  /**
+   * Calcule un facteur d'alternance pour éviter de poser plusieurs questions
+   * de la même catégorie d'affilée (mémoire sur les 3 derniers tours).
+   */
+  getCategoryCooldownFactor(category) {
+    const len = this.recentCategories.length;
+    if (len >= 1 && this.recentCategories[len - 1] === category) return 0.72;
+    if (len >= 2 && this.recentCategories[len - 2] === category) return 0.86;
+    if (len >= 3 && this.recentCategories[len - 3] === category) return 0.94;
+    return 1.0;
+  }
+
   selectNextQuestion() {
     const ranked = this.getRankedCandidates();
     if (ranked.length <= 1) {
@@ -1025,8 +1038,7 @@ export class AkinatorEngine {
     const allowLateQuestions = plausibleCount <= 8 || this.questionCount >= 12;
 
     const evaluatePool = (includeLate) => {
-      let bestQuestion = null;
-      let bestScore = 0;
+      const scored = [];
 
       for (const q of this.questions) {
         if (this.askedQuestionIds.has(q.id)) continue;
@@ -1050,30 +1062,74 @@ export class AkinatorEngine {
         const entropy = -(r * Math.log2(r) + (1 - r) * Math.log2(1 - r));
         if (entropy < 0.04) continue;
 
-        const categoryPenalty = q.category === this.lastCategory ? 0.93 : 1.0;
-        const score = entropy * coverage * (q.priority || 1.0) * categoryPenalty;
+        const categoryFactor = this.getCategoryCooldownFactor(q.category);
+        // Éviter de recommencer deux parties de suite exactement par la même 1ère question
+        const openingRepeatPenalty =
+          this.questionCount === 0 && q.id === this.lastOpeningQuestionId ? 0.65 : 1.0;
+        const score =
+          entropy * coverage * (q.priority || 1.0) * categoryFactor * openingRepeatPenalty;
 
-        if (score > bestScore) {
-          bestScore = score;
-          bestQuestion = q;
-        }
+        scored.push({ question: q, score });
       }
 
-      return { bestQuestion, bestScore };
+      scored.sort((a, b) => b.score - a.score);
+      return scored;
     };
 
-    let { bestQuestion, bestScore } = evaluatePool(allowLateQuestions);
+    let candidates = evaluatePool(allowLateQuestions);
+    let bestScore = candidates.length > 0 ? candidates[0].score : 0;
 
-    if (!allowLateQuestions && (!bestQuestion || bestScore < 0.32)) {
+    if (!allowLateQuestions && bestScore < 0.32) {
       const fallback = evaluatePool(true);
-      if (fallback.bestScore > bestScore) {
-        bestQuestion = fallback.bestQuestion;
-        bestScore = fallback.bestScore;
+      if (fallback.length > 0 && fallback[0].score > bestScore) {
+        candidates = fallback;
+        bestScore = fallback[0].score;
       }
     }
 
-    this.currentQuestion = bestQuestion;
-    return bestQuestion;
+    if (candidates.length === 0) {
+      this.currentQuestion = null;
+      return null;
+    }
+
+    // Sélection aléatoire pondérée parmi les meilleures questions proches de l'optimum
+    // afin de varier l'ordre d'une partie à l'autre sans perdre en vitesse de déduction.
+    const bandRatio = this.questionCount < 4 ? 0.85 : 0.92;
+    const maxShortlist = this.questionCount < 4 ? 7 : 4;
+    const minScore = bestScore * bandRatio;
+
+    const shortlist = [];
+    const seenCategories = new Set();
+    for (const entry of candidates) {
+      if (entry.score < minScore) break;
+      // Privilégier la diversité de catégories dans le top
+      if (!seenCategories.has(entry.question.category) || shortlist.length < 2) {
+        shortlist.push(entry);
+        seenCategories.add(entry.question.category);
+      }
+      if (shortlist.length >= maxShortlist) break;
+    }
+
+    let chosen = shortlist[0].question;
+    if (shortlist.length > 1) {
+      const weights = shortlist.map((e) => Math.pow(e.score / bestScore, 4));
+      const sumW = weights.reduce((a, b) => a + b, 0);
+      let roll = Math.random() * sumW;
+      for (let i = 0; i < shortlist.length; i++) {
+        roll -= weights[i];
+        if (roll <= 0) {
+          chosen = shortlist[i].question;
+          break;
+        }
+      }
+    }
+
+    if (this.questionCount === 0) {
+      this.lastOpeningQuestionId = chosen.id;
+    }
+
+    this.currentQuestion = chosen;
+    return chosen;
   }
 
   answerCurrentQuestion(answerType) {
@@ -1092,7 +1148,7 @@ export class AkinatorEngine {
       rejectedIds: new Set(this.rejectedIds),
       questionCount: this.questionCount,
       question: this.currentQuestion,
-      lastCategory: this.lastCategory,
+      recentCategories: [...this.recentCategories],
       forcedGuessUsed: this.forcedGuessUsed,
       answerType,
     });
@@ -1119,7 +1175,10 @@ export class AkinatorEngine {
     }
 
     this.askedQuestionIds.add(q.id);
-    this.lastCategory = q.category;
+    this.recentCategories.push(q.category);
+    if (this.recentCategories.length > 4) {
+      this.recentCategories.shift();
+    }
     this.questionCount += 1;
     this.currentQuestion = null;
   }
@@ -1132,7 +1191,7 @@ export class AkinatorEngine {
       rejectedIds: new Set(this.rejectedIds),
       questionCount: this.questionCount,
       question: this.currentQuestion,
-      lastCategory: this.lastCategory,
+      recentCategories: [...this.recentCategories],
       forcedGuessUsed: this.forcedGuessUsed,
       rejectedItemId: itemId,
     });
@@ -1178,7 +1237,7 @@ export class AkinatorEngine {
     this.askedQuestionIds = snapshot.askedQuestionIds;
     this.rejectedIds = snapshot.rejectedIds;
     this.questionCount = snapshot.questionCount;
-    this.lastCategory = snapshot.lastCategory;
+    this.recentCategories = snapshot.recentCategories || [];
     this.forcedGuessUsed = snapshot.forcedGuessUsed;
     this.currentQuestion = snapshot.question || this.selectNextQuestion();
 
